@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#titlebar {
+  -webkit-app-region: drag;
+}
+
+#titlebuttons {
+  -webkit-app-region: none;
+}
+
+body {
+  -webkit-app-region: no-drag;
+}
+
+.group:focus .group-focus\:flex {
+  display: flex;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #111827;
+  opacity: 0.8;
+}
+::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  opacity: 0.8;
+  border-radius: 0.5rem;
+}
+::-webkit-scrollbar-thumb::hover {
+  background: #0284c7;
+}
